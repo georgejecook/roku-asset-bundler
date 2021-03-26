@@ -1,0 +1,13 @@
+{
+  "id": "bundle",
+  "exclude": [
+    "**/components/**/*.*",
+    "**/source/**/*.*",
+    "**/comps/**/*.*",
+    "**/meta/**/*.*",
+    "**/.git",
+    "**/*.*Zone.Identifier"
+  ],
+  "out": "./",
+  "root": "./src"
+}
