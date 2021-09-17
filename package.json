@@ -46,10 +46,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/georgejecook/roku-asset-bundler/Roku-asset-bundler.git"
+        "url": "https://github.com/georgejecook/roku-asset-bundler.git"
     },
     "keywords": [
-        "ropm",
         "brightscript",
         "mvvm",
         "framework",
@@ -68,22 +67,15 @@
     "author": "George Cook",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/georgejecook/roku-asset-bundler/Roku-asset-bundler"
+        "url": "https://github.com/georgejecook/roku-asset-bundler"
     },
-    "homepage": "https://github.com/georgejecook/roku-asset-bundler/Roku-asset-bundler",
+    "homepage": "https://github.com/georgejecook/roku-asset-bundler",
     "ts-node": {
         "transpileOnly": true,
         "compileOptions": {
             "incremental": true,
             "allowJs": false
         }
-    },
-    "ropm": {
-        "rootDir": "src",
-        "packageRootDir": "dist",
-        "noprefix": [
-            "maestro"
-        ]
     },
     "scripts": {
         "update-schema": "npm run build && cd build && scenegraph-schema -o ../.vscode/project.xsd",
@@ -92,7 +84,6 @@
         "build": "node scripts/run-prod.js",
         "build-prod": "node scripts/run-prod-ide.js",
         "build-dev": "node scripts/run.js",
-        "build-test": "node scripts/run-test.js",
-        "rc": "ropm copy && ts-node scripts/fix-ropm-issues.js"
+        "build-test": "node scripts/run-test.js"
     }
 }
